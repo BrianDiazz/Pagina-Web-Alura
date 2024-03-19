@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contacto.css">
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo de la Barbeía Alura"></h1><!--El atributo ALT o etiqueta ALT es un atributo HTML para un texto que describe una imagen. El atributo ALT se coloca directamente en la etiqueta de la imagen. Si una imagen no se puede mostrar por alguna razón, el atributo ALT proporciona texto alternativo para mostrar en su lugar. -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+    </body>
+
+    <main>
+        <form>
+
+            <fieldset><!-- El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario. Sus etiquetas son: <fieldset> y </fieldset> (ambas obligatorias). Crea una caja: en bloque. Está definido como: Elemento en bloque. -->
+
+                <label for="nombreyapellido">Nombre y Apellido</label><!-- La etiqueta <label> es una etiqueta para la entrada de datos para el <input> es obligatorio pasarle  el ID del <input>. -->
+                <input type="text" id="nombreyapellido" class="input-informacion" required><!-- Cuando agregamos la propiedad required, el navegador nos ayuda a validar si ese campo está rellenado. -->
+        
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-informacion" placeholder="Ejemplo: email@hotmail.com" required><!-- Un placeholder es un código utilizado en elementos de entrada de formulario, como campos o áreas de texto, para proporcionar una sugerencia o ejemplo de lo que se espera que el usuario ingrese en ese espacio. -->
+        
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-informacion" placeholder="(011) 1234 5678" required>
+
+            </fieldset>
+            
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10"></textarea><!-- La etiqueta <textarea> crea un cuadro de texto que podemos maniputar tanto el ancho como el alto de nuestra caja de texto -->
+            
+            <fieldset>
+
+                <legend>¿Cómo le gustaria que le contactemos?</legend><!-- El elemento <legend> (leyenda) crea un título para un grupos los campos ( <fieldset> ) de un formulario. Sus etiquetas son: <legend> y </legend> (ambas obligatorias). -->
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" required> Email</label><!-- La propiedad "name: " solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado. -->
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono" required> Telefono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked required> Whatsapp</label><!-- El atributo checked se usa para indicar que el elemento está seleccionado.  -->
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+
+                <select><!-- La estructura de la etiqueta <select> está compuesta de uno o más <option>. -->
+                    <option>Mañana</option><!-- <option> sirve para crear los ítems seleccionables de un <select> -->
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barbería Alura ?</label>
+
+            <input type="submit" name="contacto" value="Enviar Formulario" class="enviar">
+
+        </form>
+
+        <table><!-- Utilizamos la etiqueta <table> para crear una tabla. -->
+
+            <thead><!-- Utilizamos la etiqueta <thead> para marcar que es el encabezado de la tabla. -->
+
+                <tr><!-- Utilizamos la etiqueta <tr> para marcar la fila de una tabla. -->
+                    <th>Día</th>
+                    <th>Horario</th><!-- Utilizamos la etiqueta <th> para marcar el titulo de nuestra tabla. -->
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Lunes</td><!-- Utilizamos la etiqueta <td> para marcar una columna de una tabla. -->
+                    <td>08hs ~ 20hs</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08hs ~ 20hs</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08hs ~ 20hs</td>
+                </tr>
+
+            </tbody><!-- La etiqueta <tfoot>, representa el pie de página de la tabla.  -->
+
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo de la Barbeía Alura">
+        <p class="copyright">&copy Copyright Barbería Alura 2024</p>
+    </footer>
+
+</html>

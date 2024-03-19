@@ -1,0 +1,118 @@
+header{
+
+    background: #CCCCCC;
+    padding: 20px 0;
+
+    .caja{
+
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+
+        nav{
+            position: absolute;
+            top: 110px;
+            right: 0px;
+        }
+    
+        nav li{
+            display: inline;
+            margin: 0 0 0 15px;
+        }
+    
+        nav a{
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            text-decoration: none; /* le quita la decoracion o el subrayado del texto */
+        }
+
+        nav a:hover{
+            color: #c78c18;
+            text-decoration: underline; /* le agrega subrayado al texto */
+        }
+
+    }
+
+}
+
+main{
+
+    width: 940px;
+    margin: 0 auto;
+
+    form{
+        margin: 40px 0;
+    }
+
+    form label, form legend{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+        font-style: italic; /* La propiedad CSS "font-style: " establece el estilo que va tener nuestra fuente (letras) que le pongamos*/
+    }
+
+    .input-informacion{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px; /* La propiedad CSS "margin: " establece el margen para los cuatro lados. 1) parametro: Arriba, 2) parametro: Derecha, 3) parametro: Abajo,
+        4) parametro: izquierda */
+        padding: 10px 25px; /* La propiedad CSS "padding: " singnifica que es el relleno del elemento */
+        width: 50%; /* La propiedad CSS "width: " singnifica que es el ancho del elemento */
+    }
+
+    .checkbox{
+        margin: 20px 0;
+    }
+
+    .enviar{
+        width: 40%;
+        padding: 15px 0px;
+        font-size: 18x;
+        font-weight: bold; /* sirve para poner el texto o la fuente en negrita */
+        color: white;
+        background: orange;
+        border: none; /* normalmente cuando creamos un boton o cuadro de texto ya viene por default un tipo de borde, pero con el "border: none;" se lo quitamos y hasta podemos configurarlo */
+        border-radius: 5px;
+        transition: 1s all; /* sirve para marcar una transicion visual de un efecto al cambiar de un color a otro en el background, esto afecta al "hover" que tenemos que declarar previamente */
+        cursor: pointer; /* este comando sirve para cambiar la forma del cursor, en este caso cuando el usuario pasa el cursor por el boton, este cambia al de una mano */
+    }
+
+    .enviar:hover{
+        background: darkgreen;
+        transform: scale(1.2);/* Utilizamos la propiedad transform: scale() para aumentar un elemento proporcionalmente. */
+    }
+
+}
+
+table{
+
+    margin: 40px 40px;
+
+    thead{
+        background: #555555;
+        color: white;
+        font-weight: bold;
+    }
+
+    td,th{
+        border: 1px solid #000000;
+        padding: 8px 15px;
+    }
+}
+
+footer{ /* La etiqueta <footer>, sirve para el pie de nuestra página. */
+
+    text-align: center;
+    background: url(imagenes/bg.jpg); /* Sirve para llamar a una imagen que tengamos y usarlo como fondo en el background. En el CSS, cuando hacemos referencia a la dirección 
+    de una imagen, usamos el valor url. */
+    padding: 20px;
+
+    .copyright{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+}

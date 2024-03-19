@@ -1,0 +1,114 @@
+header{
+
+    background: #CCCCCC;
+    padding: 20px 0;
+
+    .caja{
+
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+
+        nav{
+            position: absolute;
+            top: 110px;
+            right: 0px;
+        }
+    
+        nav li{
+            display: inline;
+            margin: 0 0 0 15px;
+        }
+    
+        nav a{
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            text-decoration: none; /* le quita la decoracion o el subrayado del texto */
+        }
+
+        nav a:hover{
+            color: #c78c18;
+            text-decoration: underline; /* le agrega subrayado al texto */
+        }
+
+    }
+
+}
+
+main{
+    
+    .productos{
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .productos li{
+        display: inline-block; /* display: inline-block; Pudiendo ajustar el tamaño de su contenido, dejándolo regulable. El tamaño puede ser ajustado, 
+        tanto en la largura, como en la altura. */
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px; /* El elemento aumenta su tamaño. Cuando declaro que existe un espaciamiento interno, estoy aumentando el contenido. */
+        box-sizing:  border-box;
+        border-color: #000000; /* Sirve para definir el color del borde */
+        border-width: 2px; /* Sirve para definir el ancho */
+        border-style: solid; /* sirve para definir el tipo de grosor del borde */
+        border-radius: 10px; /* sirve para editar los bordes segun el radio en pixeles que le pasemos como parametro, ejemplo de "border-radius: 10px 10px 10px 10px;" 
+        (sirve para editar el borde superior izquierdo) <------------------------------------------------------------------------------------------|    |   |     |
+        (sirve para editar el borde superior derecho) <-------------------------------------------------------------------------------------------------|   |     |
+        (sirve para editar el borde inferior derecho) <-----------------------------------------------------------------------------------------------------|     |
+        (sirve para editar el borde inferior izquierdo) <---------------------------------------------------------------------------------------------------------|
+        Siempre va en el sentido del agujas del reloj, empezando siempre desde el superior izquierdo, quedando de esta manera: border-radius: 10px 10px 10px 10px; 
+        y siempre se coloca varios solo si se quiere editar los pixeles de cada borde */
+    }
+
+    .productos li:hover{  /* Se activa cuando el usuario pasa el mouse en el objeto, "hover" se puede interpretar como "capturar" cuando el usuario 
+        pasa el mouse por ese sector, en resumen: hover, cuando el usuario pasa el cursor sobre el elemento. */
+        border-color: #c78c18;
+    }
+
+    .productos li:active{ /* Se activa cuando el usuario intercciona y hace un clic, en resumen: active, cuando un elemento está siendo activado por el usuario.*/
+        border-color: #088c19;
+    }
+
+    .productos h2{
+        font-size: 30px; /*cambia el tamaño de la letra */
+        font-weight: bold; /*especifica el peso o grueso de la letra */
+        text-align: center; /*alinea el texto en el centro */
+    }
+
+    .productos li:hover h2{ /* En el hover, mapeamos el comportamiento del mouse por encima del elemento, y podemos usar esto para descartar visualmente el elemento. 
+        En este caso hacemos que el hover haga efectos en la etiqueta h2*/
+        font-size: 33px;
+    }
+
+    .descripcion{
+        font-size: 18px;
+    }
+
+    .precio{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px; 
+    }
+
+}
+
+footer{ /* La etiqueta <footer>, sirve para el pie de nuestra página. */
+
+    text-align: center;
+    background: url(imagenes/bg.jpg); /* Sirve para llamar a una imagen que tengamos y usarlo como fondo en el background. En el CSS, cuando hacemos referencia a la dirección 
+    de una imagen, usamos el valor url. */
+    padding: 20px;
+
+    .copyright{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+}
